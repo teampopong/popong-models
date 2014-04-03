@@ -12,7 +12,6 @@ setup(
     packages=['popong_models'],
     platforms='any',
     install_requires=[
-        'alembic >= 0.0.0',
         'SQLAlchemy >= 0.8.1',
     ],
     classifiers=[

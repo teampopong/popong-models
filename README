@@ -1,0 +1,12 @@
+# POPONG Models
+
+A set of data models that describe Korean political data. The models are
+written in SQLAlchemy.
+
+Usage:
+
+    #!/usr/bin/env python
+    
+    from popong_models import Person
+    some_people = Person.query.filter_by(birthday_month=3).all()
+

@@ -1,0 +1,3 @@
+include CHANGES LICENSE
+recursive-include popong_models *
+recursive-exclude popong_models *.pyc

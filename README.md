@@ -5,7 +5,17 @@ These models extract valuable information of Korean politics, and power [Pokr](h
 
 ## Usage
 
+Initialize new database:
+
+    $ cd PROJECT_DIRECTORY
+    $ popong-alembic-init
+    $ vi alembic.ini       # fill database location
+
+
+Python models:
+
     #!/usr/bin/env python
     
     from popong_models import Person
     some_people = Person.query.filter_by(birthday_month=3).all()
+

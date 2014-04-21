@@ -1,0 +1,7 @@
+#!/bin/bash
+
+DIR=$(dirname `python -c "import popong_models; print popong_models.__file__"`)
+ALEMBIC_DIR=$(readlink -e "$DIR/../alembic")
+ALEMBIC_DIR_ESCAPED="$(echo $ALEMBIC_DIR | sed -e 's/[]\/()$*.^|[]/\\&/g')"
+
+sed -e "s/{0}/$ALEMBIC_DIR_ESCAPED/" "$ALEMBIC_DIR/alembic.ini.sample" > alembic.ini

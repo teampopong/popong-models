@@ -11,6 +11,7 @@ setup(
                 'team POPONG',
     packages=['popong_models'],
     platforms='any',
+    scripts=['popong_models/bin/popong-alembic-init'],
     install_requires=[
         'SQLAlchemy >= 0.8.1',
     ],
@@ -20,5 +21,4 @@ setup(
         'Operating System :: OS Independent',
         'Programming Language :: Python',
     ],
-    #test_suite='' TODO
 )

@@ -1,3 +1,5 @@
 include CHANGES LICENSE
 recursive-include popong_models *
 recursive-exclude popong_models *.pyc
+recursive-include alembic *
+recursive-exclude alembic *.pyc

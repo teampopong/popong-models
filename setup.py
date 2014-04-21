@@ -12,6 +12,7 @@ setup(
     packages=['popong_models'],
     platforms='any',
     scripts=['popong_models/bin/popong-alembic-init'],
+    include_package_data=True,
     install_requires=[
         'SQLAlchemy >= 0.8.1',
     ],

@@ -14,7 +14,8 @@ setup(
     scripts=['popong_models/bin/popong-alembic-init'],
     include_package_data=True,
     install_requires=[
-        'SQLAlchemy >= 0.8.1',
+        'alembic>=0.5.0',
+        'SQLAlchemy>=0.8.1',
     ],
     classifiers=[
         'Intended Audience :: Developers',

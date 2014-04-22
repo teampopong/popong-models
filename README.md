@@ -3,6 +3,10 @@
 A set of data models for Korean political data written in SQLAlchemy.
 These models extract valuable information of Korean politics, and power [Pokr](http://pokr.kr) and [POPONG APIs](http://data.popong.com).
 
+## Install
+
+    $ sudo pip install git+https://github.com/teampopong/popong-models.git
+
 ## Usage
 
 Initialize new database:

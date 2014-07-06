@@ -14,7 +14,7 @@ from .api_model import ApiModel
 from .base import Base
 from .bill_withdrawal import bill_withdrawal
 from .candidacy import Candidacy
-from .cosponsorship import cosponsorship
+from .cosponsorship import Cosponsorship
 from .party import Party
 
 
@@ -53,7 +53,7 @@ class Person(Base, ApiModel):
             order_by='desc(Candidacy.assembly_id)',
             backref='person')
     bills_ = relationship('Bill',
-            secondary=cosponsorship,
+            secondary=Cosponsorship.__table__,
             order_by='desc(Bill.proposed_date)',
             backref='cosponsors')
     withdrawed_bills = relationship('Bill',
